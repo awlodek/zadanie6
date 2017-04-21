@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.ja.player.MainActivity">
+
+
+    <Button
+        android:id="@+id/playSound"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="play"
+        android:onClick="play"
+        />
+    <Button
+        android:id="@+id/stopSound"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="stop"
+        android:layout_below="@+id/playSound"
+        android:onClick="stopSound"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wyjście"
+        android:id="@+id/btnNewAlertDialogButton"
+        android:layout_below="@+id/stopSound"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnNewAlertDialogButton"
+        android:text="Lista piosenek" />
+
+</RelativeLayout>
